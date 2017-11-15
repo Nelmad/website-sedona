@@ -8,6 +8,114 @@
     <title>Document</title>
 </head>
 <body>
+<header class="header">
+    <nav class="header__menu nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#">Информация</a></li>
+            <li class="nav__item"><a href="#">Фото и видео</a></li>
+            <li class="nav__item"><a href="#">Карта штата</a></li>
+            <li class="nav__item"><a href="#">Гостиницы</a></li>
+        </ul>
+    </nav>
+    <form class="header__form search-settings" action="">
+        <fieldset class="search-settings__features-selection features">
+            <legend class="features__title">Инфраструктура:</legend>
+            <ul class="features__list">
+                <li class="features__item feature">
+                    <label class="feature__title">
+                        <input class="feature__input" type="checkbox" value="">Бассейн
+                    </label>
+                </li>
+                <li class="features__item feature">
+                    <label class="feature__title">
+                        <input class="feature__input" type="checkbox" value="">Парковка
+                    </label>
+                </li>
+                <li class="features__item feature">
+                    <label class="feature__title">
+                        <input class="feature__input" type="checkbox" value="">wi-fi
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
 
+        <fieldset class="search-settings__types-selection types">
+            <legend class="types__title">Тип жилья:</legend>
+            <ul class="types__list">
+                <li class="types__item type">
+                    <label class="type__title">
+                        <input class="type__input" type="checkbox" value="">Гостинница
+                    </label>
+                </li>
+                <li class="types__item type">
+                    <label class="type__title">
+                        <input class="type__input" type="checkbox" value="">Мотель
+                    </label>
+                </li>
+                <li class="types__item type">
+                    <label class="type__title">
+                        <input class="type__input" type="checkbox" value="">Апартименты
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <!--TODO-->
+        <div class="search-settings__price-filter">
+            <p class="search-settings__price-title">Стоимость в сутки (р):</p>
+            <label><input type="range"></label>
+            <button class="search-settings__button">Показать</button>
+        </div>
+    </form>
+</header>
+
+<main class="search-results">
+    <section class="search-results__header">
+        <!--TODO header-->
+    </section>
+    <section class="search-results__content">
+        <ul class="search-results__list">
+            <li class="search-results__item housing">
+                <div class="housing__image-container">
+                    <img src="http://placehold.it/100x100" alt="" class="housing__image">
+                </div>
+                <div class="housing__description">
+                    <p class="housing__title">AMARA RESORT & SPA</p>
+                    <p class="housing__type">Гостинница</p>
+                    <p class="housing__price">От 4000 р.</p>
+                    <button class="housing__details-button">Подробнее</button>
+                    <button class="housing__book-button">Забронировать</button>
+                </div>
+                <div class="housing__rating">
+                    <!--TODO rating-->
+                </div>
+            </li>
+
+
+        </ul>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__left">
+        <p class="logo">#visitsedona</p>
+    </div>
+    <div class="footer__center">
+        <ul class="footer__list follow">
+            <li class="follow__twitter">
+                <a href="#"><img src="http://placehold.it/50x50" alt=""></a>
+            </li>
+            <li class="follow__facebook">
+                <a href="#"><img src="http://placehold.it/50x50" alt=""></a>
+            </li>
+            <li class="follow__youtube">
+                <a href="#"><img src="http://placehold.it/50x50" alt=""></a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer__right">
+        <div class="copyright"><img src="http://placehold.it/200x50" alt=""></div>
+    </div>
+</footer>
 </body>
 </html>
