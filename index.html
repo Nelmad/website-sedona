@@ -8,6 +8,151 @@
     <title>Document</title>
 </head>
 <body>
+<header>
+    <nav>
+        <div class="logo">
+            <a href=""><img src="" alt="" width="100" height="50"></a>
+        </div>
+        <ul>
+            <li><a href="#">информация</a></li>
+            <li><a href="#">фото и видео</a></li>
+            <li><a href="#">карта штата</a></li>
+            <li><a href="#">гостиницы</a></li>
+        </ul>
+    </nav>
+    <div>
+        <picture><img src="http://placehold.it/200x50" alt=""></picture>
+    </div>
+</header>
 
+<main class="content">
+    <section class="reasons">
+        <p class="reasons__title">Седона - небольшой горолов в Аризоне, заслуживающий большего!</p>
+        <p class="reasons__subtitle">Рассмотрим 5 причин, по которым в Седоне круче, чем в Гранд каньон!</p>
+        <ul class="reasons__list">
+            <li class="reasons__item reason reason--full-width reason--image-right">
+                <p class="reason__title">НАСТОЯЩИЙ
+                    ГОРОДОК
+                </p>
+                <p class="reason__number">— №1 —</p>
+                <p class="reason__description">СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                <div class="reason__image"><img src="http://placehold.it/200x50" alt=""></div>
+            </li>
+            <li class="reasons__item reason reason--full-width reason--image-left">
+                <p class="reason__title">ТАМ ЕСТЬ
+                    Мост дьявола
+                </p>
+                <p class="reason__number">— №2 —</p>
+                <p class="reason__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <div class="reason__image"><img src="http://placehold.it/200x50" alt=""></div>
+            </li>
+            <li class="reasons__item reason">
+                <p class="reason__title">НЕБОЛЬШАЯ
+                    ПЛОЩАДЬ
+                </p>
+                <p class="reason__number">— №3 —</p>
+                <p class="reason__description">ВСЕ достопримечательности
+                    находятся очень близко</p>
+            </li>
+            <li class="reasons__item reason">
+                <p class="reason__title">КРАСИВАЯ
+                    ДОРОГА
+                </p>
+                <p class="reason__number">— №4 —</p>
+                <p class="reason__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем
+                    НЕ СКУЧНО!</p>
+            </li>
+            <li class="reasons__item reason">
+                <p class="reason__title">МАЛО
+                    ТУРИСТОВ
+                </p>
+                <p class="reason__number">— №4 —</p>
+                <p class="reason__description">Большинство едет в гранд каньон и толпится там</p>
+            </li>
+            <li class="reasons__item features">
+                <ul class="features__list">
+                    <li class="features__item">
+                        <p class="features__title">Жилье</p>
+                        <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    </li>
+                    <li class="features__item">
+                        <p class="features__title">ЕДА</p>
+                        <p class="features__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,
+                            Вы НЕ разочаруетесь!</p>
+                    </li>
+                    <li class="features__item">
+                        <p class="features__title">СУВЕНИРЫ</p>
+                        <p class="features__description">Не только китайского, но и местного производства!</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </section>
+    <section class="search">
+        <p class="search__title">ЗАИНТЕРЕСОВАЛИСЬ?
+        </p>
+        <p class="search__description">Укажите предполагаемые даты поездки,
+            и мы покажем вам лучшие предложения гостиниц в седоне
+        </p>
+        <button class="search__trigger">ПОИСК ГОСТИНИЦЫ В седоне</button>
+
+        <form action="" class="search__form search-form">
+            <div class="search-form__row">
+                <label class="search-form__label" for="arrival-date">Дата заезда:</label>
+                <input class="search-form__date-input" id="arrival-date" type="text">
+            </div>
+            <div class="search-form__row">
+                <label class="search-form__label" for="leave-date">Дата выезда:</label>
+                <input class="search-form__date-input" id="leave-date" type="text">
+            </div>
+            <div class="search-form__row">
+                <div class="search-form__col">
+                    <label class="search-form__label" for="adult-amount">ВзрослыЕ:</label>
+                    <div class="search-form__counter">
+                        <button type="button"
+                                class="search-form__counter-button search-form__counter-button--minus"></button>
+                        <input class="search-form__amount-input" id="adult-amount" type="text">
+                        <button type="button"
+                                class="search-form__counter-button search-form__counter-button--plus"></button>
+                    </div>
+                </div>
+
+                <div class="search-form__col">
+                    <label class="search-form__label" for="children-amount">ДетИ:</label>
+                    <div class="search-form__counter">
+                        <button type="button"
+                                class="search-form__counter-button search-form__counter-button--minus"></button>
+                        <input class="search-form__amount-input" id="children-amount" type="text">
+                        <button type="button"
+                                class="search-form__counter-button search-form__counter-button--plus"></button>
+                    </div>
+                </div>
+            </div>
+            <button class="search-form__button">НАЙТИ</button>
+        </form>
+    </section>
+    <section class="map">
+        <div class="map__fallback"><img src="http://placehold.it/200x50" alt=""></div>
+        <div class="map__inner"></div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__left">
+        <p class="footer__logo">#VISITSEDONA</p>
+    </div>
+    <div class="footer__center">
+        <div class="socials">
+            <ul class="socials__list">
+                <li class="socials__item"><a href=""><img src="" alt="">twitter</a></li>
+                <li class="socials__item"><a href=""><img src="" alt="">facebook</a></li>
+                <li class="socials__item"><a href=""><img src="" alt="">youtube</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__right">
+        <div class="copyright"><img src="" alt=""></div>
+    </div>
+</footer>
 </body>
 </html>
