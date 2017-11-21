@@ -5,11 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Sedona hotels</title>
 </head>
 <body>
 <header class="header">
     <nav class="header__menu nav">
+        <div class="logo">
+            <a href=""><img src="" alt="" width="100" height="50"></a>
+        </div>
         <ul class="nav__list">
             <li class="nav__item"><a href="#">Информация</a></li>
             <li class="nav__item"><a href="#">Фото и видео</a></li>
@@ -71,7 +74,19 @@
 
 <main class="search-results">
     <section class="search-results__header">
-        <!--TODO header-->
+        <h2 class="search-results__summary">Найдено: <span class="search-results__amount">3</span></h2>
+        <div class="search-results__options sorting-settings">
+            <p class="sorting-settings__title">Сортировка:</p>
+            <ul class="sorting-settings__list">
+                <li class="sorting-settings__item"><button class="sorting-settings__class-btn">По цене</button></li>
+                <li class="sorting-settings__item"><button class="sorting-settings__class-btn">По типу</button></li>
+                <li class="sorting-settings__item"><button class="sorting-settings__class-btn">По рейтингу</button></li>
+            </ul>
+            <div class="sorting-settings__order">
+                <button class="sorting-settings__order-btn logo-up"></button>
+                <button class="sorting-settings__order-btn logo-down"></button>
+            </div>
+        </div>
     </section>
     <section class="search-results__content">
         <ul class="search-results__list">
@@ -87,10 +102,44 @@
                     <button class="housing__book-button">Забронировать</button>
                 </div>
                 <div class="housing__rating">
-                    <!--TODO rating-->
+                    <div class="housing__class"></div>
+                    <p class="housing__rating-description">Рейтинг: <span class="housing__rating-value">8,5</span></p>
                 </div>
             </li>
 
+            <li class="search-results__item housing">
+                <div class="housing__image-container">
+                    <img src="http://placehold.it/100x100" alt="" class="housing__image">
+                </div>
+                <div class="housing__description">
+                    <p class="housing__title">Desert quail inn</p>
+                    <p class="housing__type">Мотель</p>
+                    <p class="housing__price">От 3000 р.</p>
+                    <button class="housing__details-button">Подробнее</button>
+                    <button class="housing__book-button">Забронировать</button>
+                </div>
+                <div class="housing__rating">
+                    <div class="housing__class"></div>
+                    <p class="housing__rating-description">Рейтинг: <span class="housing__rating-value">8,9</span></p>
+                </div>
+            </li>
+
+            <li class="search-results__item housing">
+                <div class="housing__image-container">
+                    <img src="http://placehold.it/100x100" alt="" class="housing__image">
+                </div>
+                <div class="housing__description">
+                    <p class="housing__title">Villas at poco diablo</p>
+                    <p class="housing__type">Апартаменты</p>
+                    <p class="housing__price">От 2000 р.</p>
+                    <button class="housing__details-button">Подробнее</button>
+                    <button class="housing__book-button">Забронировать</button>
+                </div>
+                <div class="housing__rating">
+                    <div class="housing__class"></div>
+                    <p class="housing__rating-description">Рейтинг: <span class="housing__rating-value">9,2</span></p>
+                </div>
+            </li>
 
         </ul>
     </section>
@@ -98,20 +147,16 @@
 
 <footer class="footer">
     <div class="footer__left">
-        <p class="logo">#visitsedona</p>
+        <p class="footer__logo">#visitsedona</p>
     </div>
     <div class="footer__center">
-        <ul class="footer__list follow">
-            <li class="follow__twitter">
-                <a href="#"><img src="http://placehold.it/50x50" alt=""></a>
-            </li>
-            <li class="follow__facebook">
-                <a href="#"><img src="http://placehold.it/50x50" alt=""></a>
-            </li>
-            <li class="follow__youtube">
-                <a href="#"><img src="http://placehold.it/50x50" alt=""></a>
-            </li>
-        </ul>
+        <div class="socials">
+            <ul class="socials__list">
+                <li class="socials__item"><a href=""><img src="" alt="">twitter</a></li>
+                <li class="socials__item"><a href=""><img src="" alt="">facebook</a></li>
+                <li class="socials__item"><a href=""><img src="" alt="">youtube</a></li>
+            </ul>
+        </div>
     </div>
     <div class="footer__right">
         <div class="copyright"><img src="http://placehold.it/200x50" alt=""></div>
