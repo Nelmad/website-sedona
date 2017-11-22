@@ -1,0 +1,27 @@
+.search {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.search__title {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.search__description {
+    font-size: 14px;
+}
+
+.search__trigger {
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: inherit;
+    background-color: #766357;
+}
+
+.search__form {
+
+}

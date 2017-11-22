@@ -1,0 +1,15 @@
+.footer {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color: rgba(255, 255, 255, .9);
+}
+
+.footer__logo {
+    color: #000000;
+    font-weight: bold;
+}
+
+.footer__copyright {
+
+}

@@ -1,0 +1,18 @@
+.nav {
+    background: #fff;
+}
+
+.nav__list {
+
+}
+
+.nav__item {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.nav__item a {
+    color: #000;
+    text-decoration: none;
+    font: bold 14px 'PT Sans', sans-serif;
+}

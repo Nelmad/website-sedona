@@ -1,0 +1,34 @@
+.reason {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+.reason__title {
+    font: bold 21px inherit;
+}
+
+.reason--full-width {
+    background-color: #81b3d2;
+    color: #ffffff;
+}
+
+.reason--image-right {
+
+}
+
+.reason__title {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.reason__number {
+    font-size: 14px;
+
+}
+
+.reason__description {
+    font-size: 14px;
+
+}

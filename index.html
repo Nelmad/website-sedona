@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to Sedona</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <header class="header">
@@ -69,20 +70,20 @@
                 <p class="reason__number">— №4 —</p>
                 <p class="reason__description">Большинство едет в гранд каньон и толпится там</p>
             </li>
-            <li class="reasons__item features">
-                <ul class="features__list">
-                    <li class="features__item">
-                        <p class="features__title">Жилье</p>
-                        <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <li class="reasons__item reason-features">
+                <ul class="reason-features__list">
+                    <li class="reason-features__item">
+                        <p class="reason-features__title">Жилье</p>
+                        <p class="reason-features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                     </li>
-                    <li class="features__item">
-                        <p class="features__title">ЕДА</p>
-                        <p class="features__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,
+                    <li class="reason-features__item">
+                        <p class="reason-features__title">ЕДА</p>
+                        <p class="reason-features__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,
                             Вы НЕ разочаруетесь!</p>
                     </li>
-                    <li class="features__item">
-                        <p class="features__title">СУВЕНИРЫ</p>
-                        <p class="features__description">Не только китайского, но и местного производства!</p>
+                    <li class="reason-features__item">
+                        <p class="reason-features__title">СУВЕНИРЫ</p>
+                        <p class="reason-features__description">Не только китайского, но и местного производства!</p>
                     </li>
                 </ul>
             </li>
@@ -100,32 +101,33 @@
         <form action="" class="search__form search-form">
             <div class="search-form__row">
                 <label class="search-form__label" for="arrival-date">Дата заезда:</label>
-                <input class="search-form__date-input" id="arrival-date" type="text">
+                <input class="search-form__input" id="arrival-date" type="text">
             </div>
             <div class="search-form__row">
                 <label class="search-form__label" for="leave-date">Дата выезда:</label>
-                <input class="search-form__date-input" id="leave-date" type="text">
+                <input class="search-form__input" id="leave-date" type="text">
             </div>
             <div class="search-form__row">
                 <div class="search-form__col">
                     <label class="search-form__label" for="adult-amount">ВзрослыЕ:</label>
                     <div class="search-form__counter">
                         <button type="button"
-                                class="search-form__counter-button search-form__counter-button--minus"></button>
-                        <input class="search-form__amount-input" id="adult-amount" type="text">
+                                class="search-form__counter-button search-form__counter-button--minus">–</button>
+                        <input class="search-form__input search-form__input--counter" id="adult-amount" type="text">
                         <button type="button"
-                                class="search-form__counter-button search-form__counter-button--plus"></button>
+                                class="search-form__counter-button search-form__counter-button--plus">+</button>
                     </div>
                 </div>
+
 
                 <div class="search-form__col">
                     <label class="search-form__label" for="children-amount">ДетИ:</label>
                     <div class="search-form__counter">
                         <button type="button"
-                                class="search-form__counter-button search-form__counter-button--minus"></button>
-                        <input class="search-form__amount-input" id="children-amount" type="text">
+                                class="search-form__counter-button search-form__counter-button--minus">–</button>
+                        <input class="search-form__input search-form__input--counter" id="children-amount" type="text">
                         <button type="button"
-                                class="search-form__counter-button search-form__counter-button--plus"></button>
+                                class="search-form__counter-button search-form__counter-button--plus">+</button>
                     </div>
                 </div>
             </div>
@@ -151,7 +153,7 @@
         </div>
     </div>
     <div class="footer__right">
-        <div class="copyright"><img src="" alt=""></div>
+        <div class="footer__copyright"><img src="" alt=""></div>
     </div>
 </footer>
 </body>

@@ -1,0 +1,23 @@
+.reason-features {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.reason-features__list {
+
+}
+
+.reason-features__item {
+    list-style: none;
+}
+
+.reason-features__title {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.reason-features__description {
+    font-size: 14px;
+}

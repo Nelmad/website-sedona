@@ -1,0 +1,42 @@
+.search-form {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.search-form__row {
+
+}
+
+.search-form__col {
+
+}
+
+.search-form__counter {
+    background-color: #f2f2f2;
+}
+
+.search-form__label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+}
+
+.search-form__input {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+    background-color: #f2f2f2;
+}
+
+.search-form__input--counter {
+
+}
+
+.search-form__button {
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #81b3d2;
+}
