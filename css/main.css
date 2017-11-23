@@ -14,3 +14,5 @@
 @import "search-results.css";
 @import "sorting-settings.css";
 @import "search-results-item.css";
+@import "price-range-numeric.css";
+@import "price-range-slider.css";

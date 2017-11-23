@@ -1,0 +1,16 @@
+.price-range-numeric {
+
+}
+
+.price-range-numeric__label {
+    font-size: 14px;
+}
+
+.price-range-numeric__input {
+    font: 14px 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-color: transparent;
+    border: none;
+}

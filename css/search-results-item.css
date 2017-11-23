@@ -24,12 +24,14 @@
     font-size: 14px;
     font-weight: bold;
     color: #ffffff;
+    background-color: #81b3d2;
 }
 
 .search-results-item__book-button {
     font-size: 14px;
     font-weight: bold;
     color: #ffffff;
+    background-color: #766357;
 }
 
 .search-results-item__rating-description {
