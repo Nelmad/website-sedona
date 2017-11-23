@@ -1,0 +1,10 @@
+.search-results {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.search-results__summary {
+    font-size: 21px;
+    font-weight: bold;
+}

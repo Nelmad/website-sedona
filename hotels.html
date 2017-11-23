@@ -5,24 +5,25 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sedona hotels</title>
+    <title>Hotels of Sedona</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <header class="header">
     <nav class="header__menu nav">
         <div class="logo">
-            <a href=""><img src="" alt="" width="100" height="50"></a>
+            <a href=""><img src="img/logo-city-sedona.png" height="70" width="138"/></a>
         </div>
         <ul class="nav__list">
-            <li class="nav__item"><a href="#">Информация</a></li>
-            <li class="nav__item"><a href="#">Фото и видео</a></li>
-            <li class="nav__item"><a href="#">Карта штата</a></li>
-            <li class="nav__item"><a href="#">Гостиницы</a></li>
+            <li class="nav__item"><a href="#">информация</a></li>
+            <li class="nav__item"><a href="#">фото и видео</a></li>
+            <li class="nav__item"><a href="#">карта штата</a></li>
+            <li class="nav__item"><a href="#">гостиницы</a></li>
         </ul>
     </nav>
     <form class="header__form search-settings" action="">
-        <fieldset class="search-settings__group search-settings-group">
-            <legend class="search-settings-group__title">Инфраструктура:</legend>
+        <div class="search-settings__group search-settings-group">
+            <p class="search-settings-group__title">Инфраструктура:</p>
             <ul class="search-settings-group__list">
                 <li class="search-settings-group__item settings-checkbox">
                     <label class="settings-checkbox__label">
@@ -40,10 +41,10 @@
                     </label>
                 </li>
             </ul>
-        </fieldset>
+        </div>
 
-        <fieldset class="search-settings__group search-settings-group">
-            <legend class="search-settings-group__title">Инфраструктура:</legend>
+        <div class="search-settings__group search-settings-group">
+            <p class="search-settings-group__title">Инфраструктура:</p>
             <ul class="search-settings-group__list">
                 <li class="search-settings-group__item settings-checkbox">
                     <label class="settings-checkbox__label">
@@ -61,7 +62,7 @@
                     </label>
                 </li>
             </ul>
-        </fieldset>
+        </div>
 
         <div class="search-settings__price-filter">
             <p class="search-settings__price-title">Стоимость в сутки (р):</p>
@@ -75,13 +76,13 @@
 
 <main class="search-results">
     <section class="search-results__header">
-        <h2 class="search-results__summary">Найдено: <span class="search-results__amount">3</span></h2>
+        <p class="search-results__summary">Найдено: <span class="search-results__amount">3</span></p>
         <div class="search-results__options sorting-settings">
             <p class="sorting-settings__title">Сортировка:</p>
             <ul class="sorting-settings__list">
-                <li class="sorting-settings__item"><a class="sorting-settings__link">По цене</a></li>
-                <li class="sorting-settings__item"><a class="sorting-settings__link">По типу</a></li>
-                <li class="sorting-settings__item"><a class="sorting-settings__link">По рейтингу</a></li>
+                <li class="sorting-settings__item"><a class="sorting-settings__link" href="#">По цене</a></li>
+                <li class="sorting-settings__item"><a class="sorting-settings__link" href="#">По типу</a></li>
+                <li class="sorting-settings__item"><a class="sorting-settings__link" href="#">По рейтингу</a></li>
             </ul>
             <div class="sorting-settings__order">
                 <a class="sorting-settings__order-link sorting-settings__order-link--up">по возрастанию</a>
@@ -103,7 +104,7 @@
                     <button class="search-results-item__book-button">Забронировать</button>
                 </div>
                 <div class="search-results-item__rating">
-                    <div class="search-results-item__class">5 здвёзд</div>
+                    <div class="search-results-item__class">5 звёзд</div>
                     <p class="search-results-item__rating-description">Рейтинг: <span class="search-results-item__rating-value">8,5</span></p>
                 </div>
             </li>
@@ -120,7 +121,7 @@
                     <button class="search-results-item__book-button">Забронировать</button>
                 </div>
                 <div class="search-results-item__rating">
-                    <div class="search-results-item__class"></div>
+                    <div class="search-results-item__class">3 звезды</div>
                     <p class="search-results-item__rating-description">Рейтинг: <span class="search-results-item__rating-value">8,9</span></p>
                 </div>
             </li>
@@ -137,7 +138,7 @@
                     <button class="search-results-item__book-button">Забронировать</button>
                 </div>
                 <div class="search-results-item__rating">
-                    <div class="search-results-item__class"></div>
+                    <div class="search-results-item__class">2 звезды</div>
                     <p class="search-results-item__rating-description">Рейтинг: <span class="search-results-item__rating-value">9,2</span></p>
                 </div>
             </li>
@@ -148,14 +149,20 @@
 
 <footer class="footer">
     <div class="footer__left">
-        <p class="footer__logo">#visitsedona</p>
+        <p class="footer__logo">#VISITSEDONA</p>
     </div>
     <div class="footer__center">
         <div class="socials">
             <ul class="socials__list">
-                <li class="socials__item"><a href=""><img src="" alt="">twitter</a></li>
-                <li class="socials__item"><a href=""><img src="" alt="">facebook</a></li>
-                <li class="socials__item"><a href=""><img src="" alt="">youtube</a></li>
+                <li class="socials__item">
+                    <a href=""><img src="img/logo-twitter.png" height="15" width="17"/>twitter</a>
+                </li>
+                <li class="socials__item">
+                    <a href=""><img src="img/logo-facebook.png" height="22" width="12"/>facebook</a>
+                </li>
+                <li class="socials__item">
+                    <a href=""><img src="img/logo-youtube.png" height="16" width="20"/>youtube</a>
+                </li>
             </ul>
         </div>
     </div>

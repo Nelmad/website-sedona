@@ -1,0 +1,17 @@
+.search-settings-group {
+
+}
+
+.search-settings-group__title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.search-settings-group__list {
+
+}
+
+.search-settings-group__item {
+    font-size: 14px;
+    list-style: none;
+}
