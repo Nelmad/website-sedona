@@ -3,6 +3,7 @@
     text-transform: uppercase;
     background-color: #ffffff;
     color: #000000;
+    border: none;
 }
 
 .search-form__row {
@@ -28,6 +29,12 @@
     font-size: 14px;
     color: #000000;
     background-color: #f2f2f2;
+
+    border: none;
+
+    padding: 0;
+    width: 346px;
+    height: 38px;
 }
 
 .search-form__input--counter {
@@ -35,8 +42,22 @@
 }
 
 .search-form__button {
-    font-size: 21px;
-    font-weight: bold;
+    font: bold 21px 'PT Sans', sans-serif;
+    text-transform: uppercase;
     color: #ffffff;
     background-color: #81b3d2;
+
+    border: none;
+    border-radius: 0;
+
+    padding: 0;
+    width: 458px;
+    height: 58px;
+}
+
+.search-form__counter-button {
+    border: none;
+    background-color: inherit;
+
+    padding: 0;
 }

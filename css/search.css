@@ -17,13 +17,20 @@
 }
 
 .search__trigger {
-    font-size: 21px;
-    font-weight: bold;
+    font: bold 21px 'PT Sans', sans-serif;
     color: #ffffff;
     text-transform: inherit;
     background-color: #766357;
+
+    border: none;
+    border-radius: 0;
+
+    padding: 0;
+    width: 568px;
+    height: 86px;
 }
 
 .search__form {
-
+    display: inline-block;
+    width: 568px;
 }
