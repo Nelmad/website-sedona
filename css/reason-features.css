@@ -12,18 +12,22 @@
 .reason-features__item {
     list-style: none;
 
-    display: inline-block;
-    text-align: center;
+    width: 256px;
+    height: 330px;
+    padding: 58px 45px 58px;
 
-    width: 258px;
-    height: 258px;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .reason-features__title {
     font-size: 21px;
     font-weight: bold;
+    margin: 0;
 }
 
 .reason-features__description {
     font-size: 14px;
+    margin: 0;
 }
