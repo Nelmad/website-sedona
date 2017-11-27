@@ -1,6 +1,8 @@
 .reasons {
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
+
+    text-align: center;
 }
 
 .reasons__title {
@@ -14,9 +16,10 @@
 }
 
 .reasons__list {
-
+    padding: 0;
 }
 
 .reasons__item {
     list-style: none;
+
 }

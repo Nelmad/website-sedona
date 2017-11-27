@@ -16,3 +16,9 @@
 @import "search-results-item.css";
 @import "price-range-numeric.css";
 @import "price-range-slider.css";
+@import "promo.css";
+
+body {
+    width: 768px;
+    margin: 0 auto;
+}

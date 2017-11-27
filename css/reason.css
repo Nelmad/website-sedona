@@ -3,6 +3,11 @@
     text-transform: uppercase;
     background-color: #eeeeee;
     color: #000000;
+
+    text-align: center;
+    display: inline-block;
+    width: 258px;
+    height: 258px;
 }
 
 .reason__title {
@@ -12,9 +17,19 @@
 .reason--full-width {
     background-color: #81b3d2;
     color: #ffffff;
+
+    width: 100%;
+}
+
+.reason__image {
+    display: inline-block;
 }
 
 .reason--image-right {
+
+}
+
+.reason--image-left {
 
 }
 

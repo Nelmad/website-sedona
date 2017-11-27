@@ -1,14 +1,24 @@
 .nav {
     background: #fff;
     text-transform: uppercase;
+
+    margin: 0 16px;
 }
 
 .nav__list {
-
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav__item {
     list-style: none;
+    padding: 18px 30px;
+}
+
+.nav__item:nth-child(3) {
+    margin-left: auto;
 }
 
 .nav__item a {

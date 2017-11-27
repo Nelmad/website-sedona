@@ -6,11 +6,17 @@
 }
 
 .reason-features__list {
-
+    padding: 0;
 }
 
 .reason-features__item {
     list-style: none;
+
+    display: inline-block;
+    text-align: center;
+
+    width: 258px;
+    height: 258px;
 }
 
 .reason-features__title {
