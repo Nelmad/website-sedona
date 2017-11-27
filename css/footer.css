@@ -5,12 +5,15 @@
     color: #000000;
 
     padding: 36px 0;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 
     display: flex;
     justify-content: space-around;
+}
+
+.footer--absolute {
+    position: absolute;
+    bottom: 0;
 }
 
 .footer__logo {

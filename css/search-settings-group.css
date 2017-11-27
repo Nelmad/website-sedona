@@ -5,13 +5,19 @@
 .search-settings-group__title {
     font-weight: bold;
     font-size: 16px;
+
+    margin: 0;
 }
 
 .search-settings-group__list {
-
+    padding: 0;
 }
 
 .search-settings-group__item {
     font-size: 14px;
     list-style: none;
+}
+
+.search-settings__price-title {
+    margin: 0;
 }

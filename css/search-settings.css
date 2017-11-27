@@ -14,7 +14,16 @@
 }
 
 .search-settings__button {
-    font-size: 14px;
+    font: 14px 'PT Sans', sans-serif;
+    text-transform: uppercase;
+
     color: #ffffff;
     background-color: transparent;
+
+    border: 2px solid #ffffff;
+    border-radius: 0;
+
+    width: 133px;
+    height: 32px;
+    padding: 0;
 }

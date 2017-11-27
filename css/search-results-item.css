@@ -21,20 +21,31 @@
 }
 
 .search-results-item__details-button {
-    font-size: 14px;
-    font-weight: bold;
+    font: bold 14px 'PT Sans', sans-serif;
+    text-transform: uppercase;
     color: #ffffff;
     background-color: #81b3d2;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 0;
 }
 
 .search-results-item__book-button {
-    font-size: 14px;
-    font-weight: bold;
+    font: bold 14px 'PT Sans', sans-serif;
+    text-transform: uppercase;
     color: #ffffff;
     background-color: #766357;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 0;
 }
 
 .search-results-item__rating-description {
     font-size: 14px;
     color: #666666;
+    background-color: #f2f2f2;
 }

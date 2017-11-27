@@ -5,18 +5,28 @@
 
 .sorting-settings__title {
     color: #000000;
+
+    display: inline-block;
 }
 
 .sorting-settings__list {
+    padding: 0;
 
+    display: inline-block;
 }
 
 .sorting-settings__item {
     list-style: none;
+
+    display: inline-block;
 }
 
 .sorting-settings__link {
     color: rgba(0, 0, 0, 0.3);
     text-decoration-style: dotted;
     text-decoration-color: #81b3d2;
+}
+
+.sorting-settings__order {
+    display: inline-block;
 }

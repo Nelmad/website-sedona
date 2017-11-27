@@ -2,9 +2,20 @@
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
     color: #000000;
+    width: 100%;
 }
 
 .search-results__summary {
     font-size: 21px;
     font-weight: bold;
+
+    display: inline-block;
+}
+
+.search-results__options {
+    display: inline-block;
+}
+
+.search-results__list {
+    padding: 0;
 }
