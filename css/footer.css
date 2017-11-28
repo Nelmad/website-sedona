@@ -16,9 +16,27 @@
     bottom: 0;
 }
 
+.footer__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer__logo {
     color: #000000;
     font-weight: bold;
+
+    margin: 0;
+}
+
+.footer__center {
+
+}
+
+.footer__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__copyright {
@@ -27,10 +45,16 @@
 
 .footer__copyright-description {
     font-size: 14px;
+
+    margin: 0;
     display: inline-block;
 }
 
 .footer__copyright-logo {
     display: inline-block;
     vertical-align: middle;
+}
+
+.footer__copyright-logo img {
+    display: block;
 }

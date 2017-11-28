@@ -1,5 +1,5 @@
 .socials {
-
+    font-size: 0;
 }
 
 .socials__list {
@@ -14,7 +14,14 @@
     height: 46px;
     width: 48px;
 
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
+    display: inline-flex;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 6px;
+}
+
+.socials__item:last-child {
+    margin-right: 0;
 }
