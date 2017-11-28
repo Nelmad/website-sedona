@@ -3,22 +3,21 @@
     text-transform: uppercase;
     background-color: #ffffff;
     color: #000000;
+
+    order: -1;
 }
 
 .reason-features__list {
     padding: 0;
+    display: flex;
 }
 
 .reason-features__item {
     list-style: none;
 
     width: 256px;
-    height: 330px;
+    min-height: 256px;
     padding: 58px 45px 58px;
-
-    display: inline-flex;
-    justify-content: space-between;
-    flex-direction: column;
 }
 
 .reason-features__title {

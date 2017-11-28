@@ -9,3 +9,11 @@
     top: 77px;
     transform: translateX(-50%);
 }
+
+.promo__picture-bg {
+    display: block;
+}
+
+.promo__picture-bg img {
+    display: block;
+}

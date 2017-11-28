@@ -1,5 +1,6 @@
 @import "fonts.css";
 @import "normalize.css";
+@import "wrapper.css";
 @import "header.css";
 @import "logo.css";
 @import "nav.css";
@@ -23,10 +24,4 @@
 
 * {
     box-sizing: border-box;
-}
-
-body {
-    width: 768px;
-    margin: 0 auto;
-    position: relative;
 }

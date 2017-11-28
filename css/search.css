@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+.search__wrapper {
+    position: relative;
+}
+
 .search__title {
     font-size: 21px;
     font-weight: bold;
@@ -28,13 +32,11 @@
     padding: 0;
     width: 568px;
     height: 86px;
-
-    position: relative;
 }
 
 .search__form {
-    display: inline-block;
     width: 568px;
     position: absolute;
-
+    left: 50%;
+    transform: translateX(-50%);
 }
