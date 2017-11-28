@@ -1,8 +1,8 @@
 .nav {
-    background: #fff;
+    background: rgba(255, 255, 255, .9);
     text-transform: uppercase;
 
-    margin: 0 16px;
+    padding: 0 16px;
 }
 
 .nav__list {

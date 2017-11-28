@@ -1,3 +1,11 @@
 .header__form {
     background: #666666 url("../img/hotels-bg.jpg");
 }
+
+.header__menu {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    width: 768px;
+}

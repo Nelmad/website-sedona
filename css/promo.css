@@ -1,4 +1,5 @@
 .promo {
+    margin-top: 56px;
     position: relative;
 }
 
@@ -7,8 +8,4 @@
     left: 50%;
     top: 77px;
     transform: translateX(-50%);
-}
-
-.promo__picture-bg {
-
 }
