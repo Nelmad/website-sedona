@@ -8,16 +8,33 @@
 .search-results-item__title {
     font-size: 21px;
     font-weight: bold;
+    line-height: 26px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.search-results-item__title:hover {
+    color: #81b3d2;
+}
+
+.search-results-item__title:active {
+    color: rgba(0, 0, 0, .3);
 }
 
 .search-results-item__type {
     font-size: 14px;
+    line-height: 21px;
     color: #333333;
+
+    margin: 0;
 }
 
 .search-results-item__price {
     font-size: 14px;
+    line-height: 21px;
     color: #333333;
+
+    margin: 0;
 }
 
 .search-results-item__details-button {
@@ -32,6 +49,15 @@
     border-radius: 0;
 }
 
+.search-results-item__details-button:hover {
+    background-color: #669ec0;
+}
+
+.search-results-item__details-button:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, .3);
+}
+
 .search-results-item__book-button {
     font: bold 14px 'PT Sans', sans-serif;
     text-transform: uppercase;
@@ -42,6 +68,15 @@
 
     border: none;
     border-radius: 0;
+}
+
+.search-results-item__book-button:hover {
+    background-color: #604e43;
+}
+
+.search-results-item__book-button:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, .3);
 }
 
 .search-results-item__rating-description {

@@ -24,6 +24,19 @@
     margin-right: 6px;
 }
 
+.socials__item:hover {
+    background-color: #669ec0;
+}
+
+.socials__item:active {
+    background-color: #5496bd;
+}
+
+/* todo image opacity on active */
+/*.socials__item img:active {*/
+    /*opacity: .3;*/
+/*}*/
+
 .socials__item:last-child {
     margin-right: 0;
 }

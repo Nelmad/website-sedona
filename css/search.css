@@ -44,6 +44,15 @@
     padding: 30px 50px;
 }
 
+.search__trigger:hover {
+    background-color: #604e43;
+}
+
+.search__trigger:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, .3);
+}
+
 .search__form {
     width: 568px;
     position: absolute;

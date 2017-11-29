@@ -27,16 +27,29 @@
 }
 
 .search-form__input {
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
+    line-height: 26px;
     color: #000000;
     background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
 
-    border: none;
-
-    padding: 0;
+    padding: 0 0 0 12px;
     width: 346px;
     height: 38px;
+
+    outline: none;
+}
+
+.search-form__input:hover {
+    background-color: #ebebeb;
+    border-color: #ebebeb;
+}
+
+.search-form__input:focus {
+    background-color: #ffffff;
+    border-color: #e5e5e5;
 }
 
 .search-form__input--counter {
@@ -55,6 +68,15 @@
 
     padding: 16px 27px;
     width: 100%;
+}
+
+.search-form__button:hover {
+    background-color: #669ec0;
+}
+
+.search-form__button:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, .3);
 }
 
 .search-form__counter-button {
