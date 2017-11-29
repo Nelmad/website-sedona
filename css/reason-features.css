@@ -1,4 +1,6 @@
 .reason-features {
+    -webkit-font-smoothing: antialiased;
+
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
     background-color: #ffffff;
@@ -17,16 +19,26 @@
 
     width: 256px;
     min-height: 256px;
-    padding: 58px 45px 58px;
+    padding: 60px 45px 59px;
+}
+
+.reason-features__image {
+    margin-bottom: 26px;
+    min-height: 75px;
 }
 
 .reason-features__title {
-    font-size: 21px;
     font-weight: bold;
-    margin: 0;
+    line-height: 21px;
+    font-size: 21px;
+
+    width: 150px;
+    margin: 0 auto 24px;
 }
 
 .reason-features__description {
     font-size: 14px;
+    line-height: 21px;
+
     margin: 0;
 }

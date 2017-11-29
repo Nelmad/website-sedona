@@ -1,3 +1,7 @@
 .map__fallback {
     border: none;
 }
+
+.map__fallback img {
+    display: block;
+}

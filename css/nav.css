@@ -1,4 +1,6 @@
 .nav {
+    -webkit-font-smoothing: antialiased;
+
     background: rgba(255, 255, 255, .9);
     text-transform: uppercase;
 

@@ -1,10 +1,5 @@
 sorting-settings__link <- current page style
 
-сконвертировать шрифты
-межстрочный интервал
-марджины для текста
-width дляужимания текста
-
 для формочки убрать width for input
 flex для +-
 inlineblock внутриколонки
@@ -13,10 +8,6 @@ name для инпутов
 допилить ховеры
 
 -webkit-font-smoothing: antialiased;
-
-сделать кнопки на паддингах
-
-hardtitle stress test
 
 стрелки сортировки сделать бекграундом, текст скрыть
 

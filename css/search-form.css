@@ -46,15 +46,15 @@
 .search-form__button {
     font: bold 21px 'PT Sans', sans-serif;
     text-transform: uppercase;
+    line-height: 26px;
     color: #ffffff;
     background-color: #81b3d2;
 
     border: none;
     border-radius: 0;
 
-    padding: 0;
-    width: 458px;
-    height: 58px;
+    padding: 16px 27px;
+    width: 100%;
 }
 
 .search-form__counter-button {

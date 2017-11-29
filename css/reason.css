@@ -1,4 +1,6 @@
 .reason {
+    -webkit-font-smoothing: antialiased;
+
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
     background-color: #eeeeee;
@@ -13,14 +15,16 @@
 }
 
 .reason__container {
-    padding: 50px 39px 40px;
+    padding: 50px 39px 35px;
 }
 
 .reason__title {
     font-weight: bold;
     font-size: 21px;
-    margin: 0;
-    padding-bottom: 21px;
+    line-height: 21px;
+
+    width: 150px;
+    margin: 0 auto 21px;
 }
 
 .reason--full-width {
@@ -47,11 +51,12 @@
 
 .reason__number {
     font-size: 14px;
-    margin: 0;
-    padding-bottom: 21px;
+    line-height: 21px;
+    margin: 0 0 21px;
 }
 
 .reason__description {
     font-size: 14px;
+    line-height: 21px;
     margin: 0;
 }

@@ -1,4 +1,5 @@
 .search {
+    -webkit-font-smoothing: antialiased;
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
     background-color: #ffffff;
@@ -9,19 +10,29 @@
 
 .search__wrapper {
     position: relative;
+    padding: 0 100px;
 }
 
 .search__title {
-    font-size: 21px;
+    font-size: 30px;
     font-weight: bold;
+
+    width: 400px;
+    margin: 53px auto 24px;
 }
 
 .search__description {
     font-size: 14px;
+    line-height: 24px;
+
+    width: 400px;
+    margin: 0 auto 46px;
 }
 
 .search__trigger {
+    -webkit-font-smoothing: antialiased;
     font: bold 21px 'PT Sans', sans-serif;
+    line-height: 26px;
     color: #ffffff;
     text-transform: inherit;
     background-color: #766357;
@@ -29,9 +40,8 @@
     border: none;
     border-radius: 0;
 
-    padding: 0;
-    width: 568px;
-    height: 86px;
+    width: 100%;
+    padding: 30px 50px;
 }
 
 .search__form {
