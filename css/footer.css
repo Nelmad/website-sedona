@@ -34,9 +34,9 @@
     font-size: 21px;
     font-weight: bold;
 
-    margin: 0;
     display: inline-block;
     vertical-align: sub;
+    margin: 0 0 0 -0.35em; /* сдвиг на пробел (0,35em) между div и p */
 }
 
 .footer__center {
