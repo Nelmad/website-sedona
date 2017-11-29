@@ -1,9 +1,11 @@
 .socials {
     font-size: 0;
+
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .socials__list {
-    margin: 0;
     padding: 0;
 }
 
