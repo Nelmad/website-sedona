@@ -1,26 +1,26 @@
 @font-face {
-    font-family: 'PTSans';
+    font-family: 'PT Sans';
     src: url('../fonts/PT_Sans/PTSans-Web-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'PTSans';
+    font-family: 'PT Sans';
     src: url('../fonts/PT_Sans/PTSans-Web-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'PTSans';
+    font-family: 'PT Sans';
     src: url('../fonts/PT_Sans/PTSans-Web-BoldItalic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'PTSans';
+    font-family: 'PT Sans';
     src: url('../fonts/PT_Sans/PTSans-Web-Italic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
