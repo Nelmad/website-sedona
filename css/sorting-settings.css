@@ -1,6 +1,7 @@
 .sorting-settings {
     font: 12px 'PT Sans', sans-serif;
     text-transform: uppercase;
+    max-width: 456px;
 }
 
 .sorting-settings__title {
@@ -29,11 +30,40 @@
 }
 
 .sorting-settings__link {
+    line-height: 21px;
     color: rgba(0, 0, 0, 0.3);
-    text-decoration-style: dotted;
-    text-decoration-color: #81b3d2;
+    text-decoration: none;
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-settings__link:hover {
+    color: #81b3d2;
+}
+
+.sorting-settings__link:active {
+    border-bottom: none;
+    color: #000000;
 }
 
 .sorting-settings__order {
     display: inline-block;
+    position: absolute;
+    right: 46px;
+}
+
+.sorting-settings__order-link {
+    display: inline-block;
+    padding: 11px 16px 0 0;
+    overflow: hidden;
+    width: 11px;
+    height: 0;
+}
+
+.sorting-settings__order-link--up {
+    background: url(../img/arrow-gray.png) no-repeat;
+}
+
+.sorting-settings__order-link--down {
+    background: url(../img/arrow-gray.png) no-repeat;
+    transform: rotate(180deg);
 }
