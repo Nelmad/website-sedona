@@ -1,0 +1,12 @@
+.settings-checkbox__input {
+    display: none;
+}
+
+.settings-checkbox__label {
+    padding: 3px 41px;
+    background: url(../img/checkbox-off.png) no-repeat left center;
+}
+
+.settings-checkbox__input:checked + .settings-checkbox__label {
+    background: url(../img/checkbox-on.png) no-repeat left center;
+}

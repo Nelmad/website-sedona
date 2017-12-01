@@ -2,6 +2,10 @@
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
     color: #ffffff;
+
+    padding: 31px 44px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .search-settings__price-filter {
