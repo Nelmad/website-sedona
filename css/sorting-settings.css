@@ -7,10 +7,12 @@
     color: #000000;
 
     display: inline-block;
+    margin: 0;
 }
 
 .sorting-settings__list {
     padding: 0;
+    margin: 0;
 
     display: inline-block;
 }

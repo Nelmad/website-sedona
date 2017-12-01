@@ -3,9 +3,28 @@
     text-transform: uppercase;
     color: #000000;
     list-style: none;
+    border-bottom: 1px solid #e5e5e5;
+
+    padding: 0 46px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-results-item__image-container {
+    margin-top: 30px;
+}
+
+.search-results-item__image-container img {
+    display: block;
+}
+
+.search-results-item__description {
+    margin-top: 24px;
 }
 
 .search-results-item__title {
+    -webkit-font-smoothing: antialiased;
+
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
@@ -38,12 +57,15 @@
 }
 
 .search-results-item__details-button {
+    -webkit-font-smoothing: antialiased;
+
     font: bold 14px 'PT Sans', sans-serif;
+    line-height: 21px;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #81b3d2;
 
-    padding: 0;
+    padding: 3px 17px;
 
     border: none;
     border-radius: 0;
@@ -59,12 +81,15 @@
 }
 
 .search-results-item__book-button {
+    -webkit-font-smoothing: antialiased;
+
     font: bold 14px 'PT Sans', sans-serif;
+    line-height: 21px;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #766357;
 
-    padding: 0;
+    padding: 3px 17px;
 
     border: none;
     border-radius: 0;
@@ -79,8 +104,33 @@
     color: rgba(255, 255, 255, .3);
 }
 
+.search-results-item__rating {
+    margin-top: 30px;
+    position: relative;
+}
+
 .search-results-item__rating-description {
     font-size: 14px;
+    line-height: 21px;
     color: #666666;
     background-color: #f2f2f2;
+    text-align: center;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    margin: 0;
+    padding: 3px 0 3px 3px;
+    width: 110px;
+}
+
+.search-results-item__class {
+    text-align: right;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 110px;
 }

@@ -3,7 +3,7 @@
     text-transform: uppercase;
     color: #ffffff;
 
-    padding: 31px 44px;
+    padding: 28px 45px;
     display: flex;
     justify-content: space-between;
 }
@@ -27,7 +27,6 @@
     border: 2px solid #ffffff;
     border-radius: 0;
 
-    width: 133px;
-    height: 32px;
-    padding: 0;
+    min-width: 133px;
+    min-height: 32px;
 }

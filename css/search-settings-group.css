@@ -1,5 +1,5 @@
 .search-settings-group {
-
+    -webkit-font-smoothing: antialiased;
 }
 
 .search-settings-group__title {
@@ -16,15 +16,21 @@
 
 .search-settings-group__item {
     font-size: 14px;
+    line-height: 21px;
     list-style: none;
 
-    margin-bottom: 23px;
+    margin-bottom: 25px;
 }
 
 .search-settings-group__item:last-child {
     margin-bottom: 0;
 }
 
+.search-settings__price-filter {
+    -webkit-font-smoothing: antialiased;
+}
+
 .search-settings__price-title {
+    line-height: 21px;
     margin: 0;
 }

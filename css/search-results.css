@@ -1,8 +1,15 @@
 .search-results {
+    -webkit-font-smoothing: antialiased;
+
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
     color: #000000;
     width: 100%;
+}
+
+.search-results__header {
+    padding: 0 46px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .search-results__summary {
@@ -10,12 +17,18 @@
     font-weight: bold;
 
     display: inline-block;
+    margin: 0;
 }
 
 .search-results__options {
     display: inline-block;
 }
 
+.search-results__content {
+
+}
+
 .search-results__list {
+    margin: 0;
     padding: 0;
 }

@@ -1,5 +1,8 @@
 .header__form {
     background: #666666 url("../img/hotels-bg.jpg") no-repeat;
+    background-position-y: -55px;
+
+    min-height: 218px;
 }
 
 .header__menu {
