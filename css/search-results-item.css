@@ -5,13 +5,15 @@
     list-style: none;
     border-bottom: 1px solid #e5e5e5;
 
-    padding: 0 46px;
+    width: 100%;
+    display: inline-flex;
+    padding: 25px 46px 30px;
 }
 
 .search-results-item__image-container {
     display: inline-block;
-    margin-top: 30px;
-    margin-right: 20px;
+    margin-right: 31px;
+    margin-top: 5px;
 }
 
 .search-results-item__image-container img {
@@ -20,11 +22,11 @@
 
 .search-results-item__description {
     display: inline-block;
-    margin-top: 24px;
+    width: 100%;
 }
 
 .search-results-item__description-text {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
 .search-results-item__title {
@@ -37,7 +39,7 @@
     text-decoration: none;
 
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .search-results-item__title:hover {
@@ -116,12 +118,11 @@
 }
 
 .search-results-item__rating {
-    margin-top: 28px;
     position: relative;
 
-    height: 92px;
+    /*height: 92px;*/
     overflow: hidden;
-    width: 150px;
+    min-width: 111px;
     float: right;
 }
 
