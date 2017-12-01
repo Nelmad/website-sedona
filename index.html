@@ -100,23 +100,27 @@
                 <button class="search__trigger">поиск гостиницы в седоне</button>
                 <form action="" class="search__form search-form">
                     <div class="search-form__row">
-                        <label class="search-form__label">Дата заезда:
-                            <input class="search-form__input" id="arrival-date" type="text">
-                        </label>
+                        <label class="search-form__label" for="arrival-date">Дата заезда:</label>
+                        <input class="search-form__input" id="arrival-date" name="arrival-date" type="text">
+                        <button class="search-form__show-input-button" type="button">
+                            <img src="img/calendar.png" height="22" width="21" alt="календарь"/>
+                        </button>
                     </div>
                     <div class="search-form__row">
                         <label class="search-form__label" for="leave-date">Дата выезда:</label>
-                        <input class="search-form__input" id="leave-date" type="text">
-                        <img src="img/calendar.png" height="22" width="21" alt="календарь"/>
+                        <input class="search-form__input" id="leave-date" name="leave-date" type="text">
+                        <button class="search-form__show-input-button" type="button">
+                            <img src="img/calendar.png" height="22" width="21" alt="календарь"/>
+                        </button>
                     </div>
-                    <div class="search-form__row">
+                    <div class="search-form__row search-form__row--flex">
                         <div class="search-form__col">
                             <label class="search-form__label" for="adult-amount">Взрослые:</label>
                             <div class="search-form__counter">
                                 <button type="button" class="search-form__counter-button search-form__counter-button--minus">
                                     <img src="img/minus.png" height="3" width="12" alt="–"/>
                                 </button>
-                                <input class="search-form__input search-form__input--counter" id="adult-amount" type="text">
+                                <input class="search-form__input search-form__input--counter" id="adult-amount" name="adult-amount" type="text">
                                 <button type="button" class="search-form__counter-button search-form__counter-button--plus">
                                     <img src="img/plus.png" height="11" width="11" alt="+"/>
                                 </button>
@@ -130,7 +134,7 @@
                                 <button type="button" class="search-form__counter-button search-form__counter-button--minus">
                                     <img src="img/minus.png" height="3" width="12" alt="–"/>
                                 </button>
-                                <input class="search-form__input search-form__input--counter" id="children-amount" type="text">
+                                <input class="search-form__input search-form__input--counter" id="children-amount" name="children-amount" type="text">
                                 <button type="button" class="search-form__counter-button search-form__counter-button--plus">
                                     <img src="img/plus.png" height="11" width="11" alt="+"/>
                                 </button>

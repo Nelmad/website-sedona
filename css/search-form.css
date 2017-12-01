@@ -6,10 +6,18 @@
 
     border: none;
     padding: 55px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .search-form__row {
+    margin-bottom: 29px;
+}
 
+.search-form__row--flex {
+    /*todo*/
+    display: flex;
 }
 
 .search-form__col {
@@ -36,7 +44,6 @@
     border: 2px solid #f2f2f2;
 
     padding: 0 0 0 12px;
-    width: 346px;
     height: 38px;
 
     outline: none;
@@ -53,7 +60,7 @@
 }
 
 .search-form__input--counter {
-
+    width: 38px;
 }
 
 .search-form__button {
@@ -83,5 +90,12 @@
     border: none;
     background-color: inherit;
 
+    width: 38px;
+    height: 38px;
+    padding: 0;
+}
+
+.search-form__show-input-button {
+    border: none;
     padding: 0;
 }

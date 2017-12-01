@@ -33,9 +33,9 @@
 }
 
 /* todo image opacity on active */
-/*.socials__item img:active {*/
-    /*opacity: .3;*/
-/*}*/
+.socials__item img + .socials__item:active {
+    opacity: .3;
+}
 
 .socials__item:last-child {
     margin-right: 0;
