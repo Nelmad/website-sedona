@@ -18,11 +18,14 @@
     font-weight: bold;
 
     display: inline-block;
-    margin: 0;
+    margin: 0 7px 0 0;
+    width: 153px;
 }
 
 .search-results__options {
     display: inline-block;
+    vertical-align: text-top;
+    margin-top: 3px;
 }
 
 .search-results__content {
