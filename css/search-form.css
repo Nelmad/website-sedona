@@ -6,9 +6,6 @@
 
     border: none;
     padding: 55px;
-
-    display: flex;
-    flex-direction: column;
 }
 
 .search-form__row {

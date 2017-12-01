@@ -6,12 +6,12 @@
     border-bottom: 1px solid #e5e5e5;
 
     padding: 0 46px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .search-results-item__image-container {
+    display: inline-block;
     margin-top: 30px;
+    margin-right: 20px;
 }
 
 .search-results-item__image-container img {
@@ -19,7 +19,12 @@
 }
 
 .search-results-item__description {
+    display: inline-block;
     margin-top: 24px;
+}
+
+.search-results-item__description-text {
+    margin-bottom: 15px;
 }
 
 .search-results-item__title {
@@ -30,6 +35,9 @@
     line-height: 26px;
     color: #000000;
     text-decoration: none;
+
+    display: block;
+    margin-bottom: 10px;
 }
 
 .search-results-item__title:hover {
@@ -45,7 +53,9 @@
     line-height: 21px;
     color: #333333;
 
+    display: inline-block;
     margin: 0;
+    width: 110px;
 }
 
 .search-results-item__price {
@@ -53,6 +63,7 @@
     line-height: 21px;
     color: #333333;
 
+    display: inline-block;
     margin: 0;
 }
 
@@ -105,8 +116,13 @@
 }
 
 .search-results-item__rating {
-    margin-top: 30px;
+    margin-top: 28px;
     position: relative;
+
+    height: 92px;
+    overflow: hidden;
+    width: 150px;
+    float: right;
 }
 
 .search-results-item__rating-description {
@@ -118,10 +134,10 @@
 
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 1px;
 
     margin: 0;
-    padding: 3px 0 3px 3px;
+    padding: 3px 0 3px 4px;
     width: 110px;
 }
 
