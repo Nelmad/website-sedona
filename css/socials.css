@@ -13,8 +13,8 @@
     list-style: none;
     background-color: #81b3d2;
 
-    height: 46px;
-    width: 48px;
+    height: 48px;
+    width: 46px;
 
     display: inline-flex;
     vertical-align: top;
@@ -22,19 +22,21 @@
     align-items: center;
 
     margin-right: 6px;
+    position: relative;
 }
 
 .socials__item:hover {
     background-color: #669ec0;
 }
 
-.socials__item:active {
-    background-color: #5496bd;
-}
-
-/* todo image opacity on active */
-.socials__item img + .socials__item:active {
-    opacity: .3;
+.socials__item:active:before {
+    content: '';
+    position: absolute;
+    background-color: rgba(84, 150, 189, 0.7);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .socials__item:last-child {
