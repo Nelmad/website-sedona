@@ -6,21 +6,28 @@
 
     border: none;
     padding: 55px;
+    box-shadow: 0 0 15px 7px rgba(0, 0, 0, .15);
+    /*todo hide top shadow*/
 }
 
 .search-form__row {
     margin-bottom: 29px;
+    display: flex;
+    align-items: center;
 }
 
-.search-form__row--flex {
-    /*todo*/
-    display: flex;
+.search-form__row:last-of-type {
+    margin-bottom: 55px;
 }
 
 .search-form__col {
-
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 
+/*todo counter align*/
 .search-form__counter {
     background-color: #f2f2f2;
 }
@@ -41,6 +48,8 @@
     border: 2px solid #f2f2f2;
 
     padding: 0 0 0 12px;
+    margin-left: auto;
+    min-width: 305px;
     height: 38px;
 
     outline: none;
@@ -57,7 +66,10 @@
 }
 
 .search-form__input--counter {
+    min-width: inherit;
     width: 38px;
+    padding: 0;
+    text-align: center;
 }
 
 .search-form__button {
@@ -94,5 +106,7 @@
 
 .search-form__show-input-button {
     border: none;
-    padding: 0;
+    padding: 0 10px;
+    height: 38px;
+    background-color: #f2f2f2;
 }
