@@ -19,54 +19,37 @@
 .footer__left {
     flex: 1;
 
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer__left:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
 
 .footer__logo {
     color: #000000;
     font-size: 21px;
     font-weight: bold;
-
-    display: inline-block;
-    vertical-align: sub;
-    margin: 0 0 0 -0.35em; /* сдвиг на пробел (0,35em) между div и p */
+    margin: 0;
 }
 
 .footer__center {
     flex: 1;
 
-    text-align: center;
-}
-
-.footer__center:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__right {
     flex: 1;
 
-    text-align: center;
-}
-
-.footer__right:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer__copyright {
-    display: inline-block;
+
 }
 
 .footer__copyright-description {

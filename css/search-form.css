@@ -6,8 +6,7 @@
 
     border: none;
     padding: 55px;
-    box-shadow: 0 0 15px 7px rgba(0, 0, 0, .15);
-    /*todo hide top shadow*/
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .15);
 }
 
 .search-form__row {
@@ -21,14 +20,20 @@
 }
 
 .search-form__col {
+    margin-right: 6px;
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
 }
 
+.search-form__col:last-of-type {
+    margin-right: 0;
+}
+
 /*todo counter align*/
 .search-form__counter {
+    display: flex;
     background-color: #f2f2f2;
 }
 
@@ -36,6 +41,10 @@
     font-weight: bold;
     font-size: 14px;
     color: #000000;
+}
+
+.search-form__label--margin {
+    margin-left: 48px;
 }
 
 .search-form__input {
@@ -104,9 +113,17 @@
     padding: 0;
 }
 
+.search-form__counter-button img {
+    vertical-align: middle;
+}
+
 .search-form__show-input-button {
     border: none;
     padding: 0 10px;
     height: 38px;
     background-color: #f2f2f2;
+}
+
+.search-form__show-input-button img {
+    vertical-align: bottom;
 }

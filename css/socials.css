@@ -29,14 +29,8 @@
     background-color: #669ec0;
 }
 
-.socials__item:active:before {
-    content: '';
-    position: absolute;
-    background-color: rgba(84, 150, 189, 0.7);
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+.socials__item:active img {
+    opacity: 0.3;
 }
 
 .socials__item:last-child {
