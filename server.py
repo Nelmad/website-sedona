@@ -4,6 +4,8 @@ from socketserver import TCPServer
 import os
 from urllib.parse import urlparse
 
+from email_sender import mime_text_factory, send_message
+
 
 class Server(SimpleHTTPRequestHandler):
     def __init__(self, request, client_address, server):
@@ -21,8 +23,6 @@ class Server(SimpleHTTPRequestHandler):
         # print(self.request_path)
         # print(self.headers)
         # print("<----- Request End -----\n")
-        print(self.request_path)
-        print(self.query_dict)
 
         request_dirname = self.request_dirname
         for route, func in self.routes.items():
@@ -36,6 +36,20 @@ class Server(SimpleHTTPRequestHandler):
 
         if self.headers.get('Referer') is None:
             self.__read_text(file_type)
+
+            query_dict = self.query_dict
+            if path == '/index.html' and query_dict:
+                address = os.environ.get('SMTP_SERVER')
+                port = os.environ.get('SMTP_PORT')
+                login = os.environ.get('LOGIN')
+                password = os.environ.get('PASSWORD')
+
+                receivers = os.environ.get('RECEIVERS').split(', ')
+                subject = 'Simple test message'
+                content = '\n'.join(f'{key}: {value}' for key, value in query_dict.items())
+
+                message = mime_text_factory(login, receivers, subject, content)
+                send_message(address, port, login, password, message)
 
         else:
             if file_type == 'css':
