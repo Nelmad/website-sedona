@@ -1,3 +1,4 @@
+import urllib
 from http.server import SimpleHTTPRequestHandler
 from socketserver import TCPServer
 
@@ -34,9 +35,8 @@ class Server(SimpleHTTPRequestHandler):
         _, extension = os.path.splitext(path)
         file_type = extension.replace(".", "")
 
-        if self.headers.get('Referer') is None:
+        if file_type == 'html':
             self.__read_text(file_type)
-
             query_dict = self.query_dict
             if path == '/index.html' and query_dict:
                 address = os.environ.get('SMTP_SERVER')
@@ -46,18 +46,17 @@ class Server(SimpleHTTPRequestHandler):
 
                 receivers = os.environ.get('RECEIVERS').split(', ')
                 subject = 'Simple test message'
-                content = '\n'.join(f'{key}: {value}' for key, value in query_dict.items())
+                content = '\n'.join(f'{key}: {", ".join(value)}' for key, value in query_dict.items())
 
                 message = mime_text_factory(login, receivers, subject, content)
                 send_message(address, port, login, password, message)
 
-        else:
-            if file_type == 'css':
-                self.__read_text(file_type)
-            elif any((file_type == 'jpeg', file_type == 'jpg', file_type == 'png')):
-                self.__read_data('image', file_type)
-            elif file_type == 'woff2':
-                self.__read_data('font', file_type)
+        elif file_type == 'css':
+            self.__read_text(file_type)
+        elif any((file_type == 'jpeg', file_type == 'jpg', file_type == 'png')):
+            self.__read_data('image', file_type)
+        elif file_type == 'woff2':
+            self.__read_data('font', file_type)
 
     def __read_text(self, file_type):
         self.protocol_version = 'HTTP/1.1'
@@ -99,15 +98,7 @@ class Server(SimpleHTTPRequestHandler):
 
     @property
     def query_dict(self):
-        return self.query_to_dict(urlparse(self.path).query)
-
-    @staticmethod
-    def query_to_dict(query_string):
-        result = {}
-        for token in (item for item in query_string.split('&') if item):
-            pair = token.split('=', 1)
-            result[pair[0]] = pair[1]
-        return result
+        return urllib.parse.parse_qs(urlparse(self.path).query, keep_blank_values=True)
 
 
 def main():
