@@ -19,12 +19,6 @@ class Server(SimpleHTTPRequestHandler):
         super().__init__(request, client_address, server)
 
     def do_GET(self):
-        # print("\n----- Request Start ----->\n")
-        # print(self.path)
-        # print(self.request_path)
-        # print(self.headers)
-        # print("<----- Request End -----\n")
-
         request_dirname = self.request_dirname
         for route, func in self.routes.items():
             if route == request_dirname:
@@ -49,7 +43,7 @@ class Server(SimpleHTTPRequestHandler):
                 content = '\n'.join(f'{key}: {", ".join(value)}' for key, value in query_dict.items())
 
                 message = mime_text_factory(login, receivers, subject, content)
-                send_message(address, port, login, password, message)
+                send_message(address, port, login, password, message, debug=os.environ.get('DEBUG') == 'True')
 
         elif file_type == 'css':
             self.__read_text(file_type)
@@ -102,8 +96,9 @@ class Server(SimpleHTTPRequestHandler):
 
 
 def main():
-    port = 5125
-    server = TCPServer(('127.0.0.1', port), Server)
+    ip = os.environ.get('SERVER_IP', '127.0.0.1')
+    port = int(os.environ.get('SERVER_PORT', 80))
+    server = TCPServer((ip, port), Server)
     server.serve_forever()
 
 

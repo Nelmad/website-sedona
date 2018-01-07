@@ -11,9 +11,9 @@ def mime_text_factory(author: str, recipients: list, subject: str = '', msg: str
     return msg
 
 
-def send_message(address, port, login, password, msg):
+def send_message(address, port, login, password, msg, debug=False):
     server = smtplib.SMTP(address, port)
-    server.set_debuglevel(True)
+    server.set_debuglevel(debug)
     server.ehlo()
     server.starttls()
     server.ehlo()
