@@ -46,24 +46,40 @@
 }
 
 .sorting-settings__order {
+    margin-top: 1px;  /* TODO REMOVE ?? */
+
     display: inline-block;
     position: absolute;
     right: 46px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height: 10px; /* TODO REPLACE WITH ?? */
 }
 
 .sorting-settings__order-link {
     display: inline-block;
-    padding: 11px 16px 0 0;
-    overflow: hidden;
+
+    text-indent: -9999px;
+    white-space: nowrap;
     width: 11px;
-    height: 0;
+    height: 10px;
+
+    margin-right: 8px;
+}
+
+.sorting-settings__order-link:last-of-type {
+    margin-right: 0;
 }
 
 .sorting-settings__order-link--up {
-    background: url(../img/arrow-gray.png) no-repeat;
+    background-color: #000000;
+    -webkit-mask-image: url(../img/icon-up-dir.svg);
+    mask-image: url(../img/icon-up-dir.svg);
 }
 
 .sorting-settings__order-link--down {
-    background: url(../img/arrow-gray.png) no-repeat;
-    transform: rotate(180deg);
+    background-color: #000000;
+    -webkit-mask-image: url(../img/icon-down-dir.svg);
+    mask-image: url(../img/icon-down-dir.svg);
 }

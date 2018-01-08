@@ -2,6 +2,10 @@
     -webkit-font-smoothing: antialiased;
 }
 
+.search-settings-group--margin-left {
+    margin-left: 20px;
+}
+
 .search-settings-group__title {
     font-weight: bold;
     font-size: 16px;

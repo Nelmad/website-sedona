@@ -29,6 +29,8 @@
     color: #000000;
     font-size: 21px;
     font-weight: bold;
+    text-transform: uppercase;
+
     margin: 0;
 }
 
@@ -62,8 +64,11 @@
 .footer__copyright-logo {
     display: inline-block;
     vertical-align: middle;
-}
 
-.footer__copyright-logo img {
-    display: block;
+    background-color: #000000;
+    -webkit-mask-image: url(../img/logo-copyright.svg);
+    mask-image: url(../img/logo-copyright.svg);
+
+    width: 115px;
+    height: 40px;
 }

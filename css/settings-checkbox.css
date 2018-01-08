@@ -10,3 +10,7 @@
 .settings-checkbox__input:checked + .settings-checkbox__label {
     background: url(../img/checkbox-on.png) no-repeat left center;
 }
+
+.settings-checkbox__input:disabled + .settings-checkbox__label {
+    opacity: .3;
+}

@@ -8,8 +8,8 @@
     <title>Welcome to Sedona</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-<div class="wrapper">
+<body class="body">
+<div class="body__wrapper">
     <header class="header">
         <nav class="header__menu nav">
             <div class="logo">
@@ -98,7 +98,7 @@
                 в седоне</p>
             <div class="search__wrapper">
                 <button class="search__trigger">поиск гостиницы в седоне</button>
-                <form action="/" method="post" class="search__form search-form">
+                <form action="" method="get" class="search__form search-form">
                     <div class="search-form__row">
                         <label class="search-form__label" for="arrival-date">Дата заезда:</label>
                         <input class="search-form__input" id="arrival-date" name="arrival-date" type="text">
@@ -173,9 +173,7 @@
         <div class="footer__right">
             <div class="footer__copyright">
                 <p class="footer__copyright-description">website by</p>
-                <div class="footer__copyright-logo">
-                    <img src="img/logo-copyright.png" height="41" width="115" alt="copyright by html academy"/>
-                </div>
+                <div class="footer__copyright-logo">copyright by html academy</div>
             </div>
         </div>
     </footer>

@@ -1,0 +1,19 @@
+.price-range-slider {
+    height: 2px;
+
+    background-color: rgba(255,255,255,.3);
+}
+
+.price-range-slider__filtered-range {
+    height: 2px;
+
+    background-color: #ffffff;
+}
+
+.price-range-slider__button {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}

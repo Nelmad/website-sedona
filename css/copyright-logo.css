@@ -1,0 +1,9 @@
+.copyright-logo__image {
+    height: 41px;
+    width: 115px;
+}
+
+.copyright-logo__image--svg {
+    background: url("../img/logo-copyright.svg") no-repeat;
+    fill: #000000;
+}

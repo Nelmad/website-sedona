@@ -8,13 +8,24 @@
     justify-content: space-between;
 }
 
-.search-settings__price-filter {
+.search-settings__group {
+    flex: 1;
+}
 
+.search-settings__price-filter {
+    text-align: center;
 }
 
 .search-settings__price-title {
     font-size: 16px;
     font-weight: bold;
+
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.search-settings__price-range-slider {
+    margin: 20px 0 32px;
 }
 
 .search-settings__button {
@@ -25,8 +36,13 @@
     background-color: transparent;
 
     border: 2px solid #ffffff;
-    border-radius: 0;
+    border-radius: 3px;
 
-    min-width: 133px;
-    min-height: 32px;
+    min-width: 135px;
+    min-height: 36px;
+}
+
+.search-settings__button:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
