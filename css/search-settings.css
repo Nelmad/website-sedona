@@ -43,6 +43,7 @@
 }
 
 .search-settings__button:hover {
+    cursor: pointer;
     background-color: #ffffff;
     color: #000000;
 }

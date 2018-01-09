@@ -17,3 +17,7 @@
     transform: translateY(-50%);
     border-radius: 50%;
 }
+
+.price-range-slider__button:hover {
+    cursor: pointer;
+}

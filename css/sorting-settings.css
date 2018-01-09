@@ -68,6 +68,10 @@
     margin-right: 8px;
 }
 
+.sorting-settings__order-link:hover {
+    cursor: pointer;
+}
+
 .sorting-settings__order-link:last-of-type {
     margin-right: 0;
 }

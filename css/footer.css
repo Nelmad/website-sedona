@@ -64,11 +64,4 @@
 .footer__copyright-logo {
     display: inline-block;
     vertical-align: middle;
-
-    background-color: #000000;
-    -webkit-mask-image: url(../img/logo-copyright.svg);
-    mask-image: url(../img/logo-copyright.svg);
-
-    width: 115px;
-    height: 40px;
 }

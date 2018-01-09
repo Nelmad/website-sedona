@@ -96,6 +96,7 @@
 }
 
 .search-form__button:hover {
+    cursor: pointer;
     background-color: #669ec0;
 }
 

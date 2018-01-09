@@ -26,6 +26,7 @@
 }
 
 .socials__item:hover {
+    cursor: pointer;
     background-color: #669ec0;
 }
 

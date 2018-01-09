@@ -1,9 +1,26 @@
-.copyright-logo__image {
-    height: 41px;
+.copyright-logo {
     width: 115px;
+    height: 40px;
 }
 
-.copyright-logo__image--svg {
-    background: url("../img/logo-copyright.svg") no-repeat;
-    fill: #000000;
+.copyright-logo:hover {
+    /*todo*/
+    cursor: pointer;
+}
+
+.copyright-logo--svg {
+    background-color: #000000;
+    -webkit-mask-image: url(../img/logo-copyright.svg);
+    mask-image: url(../img/logo-copyright.svg);
+
+    text-indent: -9999px;
+    white-space: nowrap;
+}
+
+.copyright-logo--svg:hover {
+    background-color: #81b3d2;
+}
+
+.copyright-logo--svg:active {
+    background-color: #bdbbbc;
 }

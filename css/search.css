@@ -45,6 +45,7 @@
 }
 
 .search__trigger:hover {
+    cursor: pointer;
     background-color: #604e43;
 }
 

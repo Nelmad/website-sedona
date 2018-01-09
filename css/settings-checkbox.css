@@ -14,3 +14,7 @@
 .settings-checkbox__input:disabled + .settings-checkbox__label {
     opacity: .3;
 }
+
+.settings-checkbox__label:hover {
+    cursor: pointer;
+}
