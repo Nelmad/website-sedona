@@ -10,8 +10,12 @@
 
 .copyright-logo--svg {
     background-color: #000000;
+
     -webkit-mask-image: url(../img/logo-copyright.svg);
+    -webkit-mask-repeat: no-repeat;
+
     mask-image: url(../img/logo-copyright.svg);
+    mask-repeat: no-repeat;
 
     text-indent: -9999px;
     white-space: nowrap;

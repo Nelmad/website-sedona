@@ -36,3 +36,8 @@
 .nav__item a:active {
     color: rgba(0, 0, 0, .3);
 }
+
+/*.nav__item a:active {*/
+    /*!*todo :activated ??*!*/
+    /*background-color: #766357;*/
+/*}*/

@@ -45,6 +45,12 @@
     color: #000000;
 }
 
+/*.sorting-settings__link:active {*/
+    /*!*todo activated*!*/
+    /*border-bottom: none;*/
+    /*color: #81b3d2;*/
+/*}*/
+
 .sorting-settings__order {
     margin-top: 1px;  /* TODO REMOVE ?? */
 
@@ -58,6 +64,7 @@
 }
 
 .sorting-settings__order-link {
+    background-color: #cacaca;
     display: inline-block;
 
     text-indent: -9999px;
@@ -69,21 +76,26 @@
 }
 
 .sorting-settings__order-link:hover {
+    background-color: #000000;
     cursor: pointer;
 }
+
+.sorting-settings__order-link:active {
+    background-color: #81b3d2;
+}
+
+/*.sorting-settings__order-link arrow todo activated style*/
 
 .sorting-settings__order-link:last-of-type {
     margin-right: 0;
 }
 
 .sorting-settings__order-link--up {
-    background-color: #000000;
     -webkit-mask-image: url(../img/icon-up-dir.svg);
     mask-image: url(../img/icon-up-dir.svg);
 }
 
 .sorting-settings__order-link--down {
-    background-color: #000000;
     -webkit-mask-image: url(../img/icon-down-dir.svg);
     mask-image: url(../img/icon-down-dir.svg);
 }
