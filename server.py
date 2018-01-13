@@ -7,6 +7,8 @@ from urllib.parse import urlparse
 
 from email_sender import mime_text_factory, send_message
 
+# TODO create -> base server and app server
+
 
 class Server(SimpleHTTPRequestHandler):
     def __init__(self, request, client_address, server):
@@ -23,6 +25,9 @@ class Server(SimpleHTTPRequestHandler):
         for route, func in self.routes.items():
             if route == request_dirname:
                 func()
+
+    def do_POST(self):
+        raise NotImplementedError  # TODO
 
     def handler(self):
         path = self.request_path
@@ -47,7 +52,7 @@ class Server(SimpleHTTPRequestHandler):
 
         elif file_type == 'css':
             self.__read_text(file_type)
-        elif any((file_type == 'jpeg', file_type == 'jpg', file_type == 'png')):
+        elif any((file_type == 'jpeg', file_type == 'jpg', file_type == 'png', file_type == 'svg')):
             self.__read_data('image', file_type)
         elif file_type == 'woff2':
             self.__read_data('font', file_type)
@@ -68,7 +73,8 @@ class Server(SimpleHTTPRequestHandler):
 
             self.protocol_version = 'HTTP/1.1'
             self.send_response(200, 'OK')
-            self.send_header('content-type', f'{data_type}/{file_type}')
+            self.send_header('content-type',
+                             f'{data_type}/{file_type}{"+xml;charset=UTF-8" if file_type == "svg" else ""}')
             self.send_header('content-length', os.stat(path).st_size)
             self.end_headers()
 
