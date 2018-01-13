@@ -1,0 +1,13 @@
+.body {
+    background-color: #f2f2f2;
+}
+
+.body__wrapper {
+    background-color: #ffffff;
+    box-shadow: 0 0 15px 5px rgba(0,0,0,.2);
+
+    width: 768px;
+    margin: 0 auto;
+    padding-top: 56px;
+    position: relative;
+}

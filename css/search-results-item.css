@@ -85,6 +85,7 @@
 }
 
 .search-results-item__details-button:hover {
+    cursor: pointer;
     background-color: #669ec0;
 }
 
@@ -109,6 +110,7 @@
 }
 
 .search-results-item__book-button:hover {
+    cursor: pointer;
     background-color: #604e43;
 }
 

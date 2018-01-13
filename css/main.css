@@ -1,6 +1,6 @@
 @import "fonts.css";
 @import "normalize.css";
-@import "wrapper.css";
+@import "body.css";
 @import "header.css";
 @import "logo.css";
 @import "nav.css";
@@ -21,6 +21,7 @@
 @import "price-range-slider.css";
 @import "promo.css";
 @import "map.css";
+@import "copyright-logo.css";
 
 * {
     box-sizing: border-box;

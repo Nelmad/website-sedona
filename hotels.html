@@ -8,8 +8,8 @@
     <title>Hotels of Sedona</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-<div class="wrapper">
+<body class="body">
+<div class="body__wrapper">
     <header class="header">
         <nav class="header__menu nav">
             <div class="logo">
@@ -41,7 +41,7 @@
                 </ul>
             </div>
 
-            <div class="search-settings__group search-settings-group">
+            <div class="search-settings__group search-settings-group search-settings-group--margin-left">
                 <p class="search-settings-group__title">Тип жилья:</p>
                 <ul class="search-settings-group__list">
                     <li class="search-settings-group__item settings-checkbox">
@@ -59,7 +59,7 @@
                 </ul>
             </div>
 
-            <div class="search-settings__price-filter">
+            <div class="search-settings__group search-settings__price-filter">
                 <p class="search-settings__price-title">Стоимость в сутки (р):</p>
                 <div class="search-settings__price-range-numeric price-range-numeric">
                     <label class="price-range-numeric__label">
@@ -112,10 +112,10 @@
                         <button class="search-results-item__book-button">Забронировать</button>
                     </div>
                     <div class="search-results-item__rating">
-                        <div class="search-results-item__class">
-                            5 звёзд
+                        <div class="search-results-item__class">Звёзд: <span class="search-results-item__grade">5</span>
                         </div>
-                        <p class="search-results-item__rating-description">Рейтинг: <span class="search-results-item__rating-value">8,5</span></p>
+                        <p class="search-results-item__rating-description">Рейтинг: <span
+                                class="search-results-item__rating-value">8,5</span></p>
                     </div>
                 </li>
 
@@ -133,10 +133,10 @@
                         <button class="search-results-item__book-button">Забронировать</button>
                     </div>
                     <div class="search-results-item__rating">
-                        <div class="search-results-item__class">
-                            3 звезды
+                        <div class="search-results-item__class">Звёзд: <span class="search-results-item__grade">3</span>
                         </div>
-                        <p class="search-results-item__rating-description">Рейтинг: <span class="search-results-item__rating-value">8,9</span></p>
+                        <p class="search-results-item__rating-description">Рейтинг: <span
+                                class="search-results-item__rating-value">8,9</span></p>
                     </div>
                 </li>
 
@@ -155,10 +155,10 @@
                         <button class="search-results-item__book-button">Забронировать</button>
                     </div>
                     <div class="search-results-item__rating">
-                        <div class="search-results-item__class">
-                            2 звезды
+                        <div class="search-results-item__class">Звёзд: <span class="search-results-item__grade">2</span>
                         </div>
-                        <p class="search-results-item__rating-description">Рейтинг: <span class="search-results-item__rating-value">9,2</span></p>
+                        <p class="search-results-item__rating-description">Рейтинг: <span
+                                class="search-results-item__rating-value">9,2</span></p>
                     </div>
                 </li>
             </ul>
@@ -187,7 +187,7 @@
         <div class="footer__right">
             <div class="footer__copyright">
                 <p class="footer__copyright-description">website by</p>
-                <div class="footer__copyright-logo"><img src="img/logo-copyright.png" height="41" width="115"/></div>
+                <div class="footer__copyright-logo copyright-logo copyright-logo--svg">copyright by html academy</div>
             </div>
         </div>
     </footer>

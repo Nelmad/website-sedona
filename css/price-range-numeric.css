@@ -1,14 +1,42 @@
 .price-range-numeric {
+    border: 2px solid #ffffff;
+    border-radius: 3px;
 
+    display: flex;
 }
 
 .price-range-numeric__label {
+    position: relative;
+
+    margin: 6px;
+    display: inline-flex;
+    align-items: center;
+
     font-size: 14px;
+    border-right: 2px;
+}
+
+.price-range-numeric__label:after {
+    content: '';
+    border-right: 2px solid white;
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    width: 10px;
+    height: 22px;
+}
+
+.price-range-numeric__label:last-of-type:after {
+    content: none;
 }
 
 .price-range-numeric__input {
+    width: 75%;
+    margin-left: 5px;
+
     font: 14px 'PT Sans', sans-serif;
     text-transform: uppercase;
+    text-align: center;
     color: #ffffff;
 
     background-color: transparent;

@@ -96,6 +96,7 @@
 }
 
 .search-form__button:hover {
+    cursor: pointer;
     background-color: #669ec0;
 }
 
@@ -105,25 +106,110 @@
 }
 
 .search-form__counter-button {
+    cursor: pointer;
+
     border: none;
     background-color: inherit;
 
     width: 38px;
     height: 38px;
     padding: 0;
+
+    text-indent: -9999px;
+    white-space: nowrap;
 }
 
-.search-form__counter-button img {
-    vertical-align: middle;
+/*.search-form__counter-button img {*/
+/*vertical-align: middle;*/
+/*}*/
+
+.search-form__counter-button--minus {
+    background-color: #a9a9a9;
+
+    -webkit-mask-image: url(../img/minus.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: 11px;
+
+    mask-image: url(../img/minus.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 12px;
+}
+
+.search-form__counter-button--minus:hover {
+    background-color: #000000;
+}
+
+.search-form__counter-button--minus:active {
+    background-color: #81b3d2;
+}
+
+.search-form__counter-button--plus {
+    background-color: #a9a9a9;
+
+    -webkit-mask-image: url(../img/plus.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: 11px;
+
+    mask-image: url(../img/plus.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 11px;
+}
+
+.search-form__counter-button--plus:hover {
+    background-color: #000000;
+}
+
+.search-form__counter-button--plus:active {
+    background-color: #81b3d2;
 }
 
 .search-form__show-input-button {
+    cursor: pointer;
+
     border: none;
-    padding: 0 10px;
     height: 38px;
+    width: 41px;
+
     background-color: #f2f2f2;
+
+    text-indent: -9999px;
+    white-space: nowrap;
 }
 
-.search-form__show-input-button img {
-    vertical-align: bottom;
+.search-form__show-input-button--calendar {
+    position: relative;
+}
+
+.search-form__show-input-button--calendar:before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: #a9a9a9;
+
+    -webkit-mask-image: url(../img/calendar.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: 21px;
+
+    mask-image: url(../img/calendar.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 21px;
+}
+
+.search-form__show-input-button--calendar:hover:before {
+    background-color: #000000;
+}
+
+.search-form__show-input-button--calendar:active:before {
+    background-color: #81b3d2;
 }
