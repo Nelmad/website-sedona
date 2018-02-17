@@ -9,6 +9,10 @@
     transform: translateX(-50%);
 }
 
+.promo__picture-text img {
+    display: block;
+}
+
 .promo__picture-bg {
     display: block;
 }

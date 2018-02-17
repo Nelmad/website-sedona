@@ -81,6 +81,11 @@
     text-align: center;
 }
 
+.search-form__input--counter[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
 .search-form__button {
     font: bold 21px 'PT Sans', sans-serif;
     text-transform: uppercase;
